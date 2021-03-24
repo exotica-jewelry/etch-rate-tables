@@ -8,7 +8,7 @@
 # Used as the <caption> element. Even if you choose to hide this in your
 # display, it's important for it to exist in the HTML for assistive devices.
 title:
-  text: My awesome publications
+  text: Etch rate for aluminum (3003) with Multi-Etch
   visible: true
 
 # SUMMARY - optional
@@ -18,63 +18,43 @@ title:
 # attribute of the HTML table. While this attribute is depreciated in HTML5,
 # many screen readers continue to use it.
 summary:
-  text: I have been published in twelve different continents.
+  text:
   visible: false
 
 # NOTE - optional
 # This is a nonstandard table element, but used to display information at the
 # top of the table, below the title but above the headings.
-note: I have three pending publications.
+note:
 
 # FOOTER - optional
 # Used in the <tfoot> element at the bottom of the table. Useful for footnotes
 # or other non-critical notes to the table as a whole.
-footer: Current as of Jan. 1, 2021.
+footer:
 
 # HEADINGS - required
 # List all of the column headings in order.
 # TODO: Allow defining particular columns as text or numbers.
 # TODO: Allow defining particular columns as row headings as well.
 headings:
-  - Title
-  - Authors
-  - Coauthorship
-  - Date
-  - Type
-  - Format
-  - Size
-  - Status
-  - URL
+  - Process
+  - Etch time (minutes)
+  - Etch depth (cumulative total)
+  - Surface change
 
 # ROWS - required
 # Each row of data follows the headings defined above, in order.
 # Note YAML format requiring each new row to begin with `- -`.
 # Individual items in a row (cells in the table) may be left blank.
 rows:
-  - - An improbable journey
-    - Bilbo Smith
-    -
-    - 2000
-    - Journal
-    - Printed
-    - 5 p.
-    - Published
-    - https://example.com
-  - - An unlikely sequel
-    - Frodo Smith
-    - Bilbo Smith, Gandalf the Grey
-    - 2010
-    - Zine
-    - Printed
-    - 55 p.
-    - Published
-    - https://example.com/sequel
-  - - An unbelievable director's cut
-    - Zach Snyder
-    -
-    - 2020
-    - Film
-    - 35mm
-    - 7 hours
-    - Released
-    - https://example.com/directorscut
+  - - 150–160°F double strength
+    - 1
+    - 0.00033
+    - Matte, white
+  - - 150–160°F double strength
+    - 2
+    - 0.00081
+    - Matte, white
+  - - 150–160°F double strength
+    - 3
+    - 0.00098
+    - Matte, white
