@@ -10,10 +10,10 @@ const path       = require('path');
 //
 
 const paths = {
-  data: path.resolve('./data/', 'sample.yaml'),
+  data: path.resolve('./data/', 'aluminum.yaml'),
   template: path.resolve('./templates/', 'table.hbs'),
   styles: path.resolve('./styles/', '*.scss'),
-  dist: path.resolve('./dist/', 'sample.html')
+  dist: path.resolve('./dist/', 'aluminum.html')
 }
 
 //
