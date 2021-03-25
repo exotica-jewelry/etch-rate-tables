@@ -69,8 +69,8 @@ caption {
   .table__head .table__body,
   .table__head .table__row,
   .table__head .table__cell {
-    padding: 0.2rem 0.8rem 0;
-    line-height: 2;
+    padding: 0.2rem 0.8rem;
+    line-height: 1.2;
     font-size: 1.1rem;
   }
 }
