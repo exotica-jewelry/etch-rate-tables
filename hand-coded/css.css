@@ -92,9 +92,9 @@ caption {
 }
 
 @media (min-width: 48rem) {
-  .table__body .table__row:hover .table__cell:not(.table__note),
-  .table__body .table__row:active .table__cell:not(.table__note),
-  .table__body .table__row:focus .table__cell:not(.table__note) {
+  .table__body .table__row:hover .table__cell:not(.table__note):not(.table__cell--head2):not(.table__cell--head3),
+  .table__body .table__row:active .table__cell:not(.table__note):not(.table__cell--head2):not(.table__cell--head3),
+  .table__body .table__row:focus .table__cell:not(.table__note):not(.table__cell--head2):not(.table__cell--head3) {
     background-color: rgba(0, 0, 0, 0.025);
     color: black;
   }
