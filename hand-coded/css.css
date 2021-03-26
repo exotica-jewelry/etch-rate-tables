@@ -146,14 +146,12 @@ caption {
 }
 
 .table__row .table__cell--head2 {
-  font-size: 1.2rem;
   font-weight: bold;
   border-bottom: 2px solid black;
 }
 
 .table__row .table__cell--head3 {
   background-color: #eee;
-  font-size: 1rem;
   font-weight: bold;
 }
 
