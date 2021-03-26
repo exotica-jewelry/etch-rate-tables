@@ -156,3 +156,7 @@ caption {
   font-size: 1rem;
   font-weight: bold;
 }
+
+.table__cell[data-title="Process"] {
+  font-weight: bold;
+}
