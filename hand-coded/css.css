@@ -35,6 +35,17 @@ caption {
   font-style: italic;
 }
 
+.table__head .table__row .table__note em,
+.table__row .table__note em {
+  font-weight: bold;
+}
+
+.table__head .table__row .table__note strong,
+.table__row .table__note strong {
+  font-weight: bold;
+  font-style: normal;
+}
+
 .table__head {
   display: none;
   visibility: hidden;
