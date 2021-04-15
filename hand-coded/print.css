@@ -1,0 +1,149 @@
+@media print {
+
+  /* Resources:
+     https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/
+     https://stackoverflow.com/questions/3893986/css-media-print-issues-with-background-color
+     https://web.archive.org/web/20181124215508/http://css-discuss.incutio.com:80/wiki/Printing_Tables
+     https://developer.mozilla.org/en-US/docs/Web/CSS/@page
+     https://docs.w3cub.com/css/css_pages
+     https://drafts.csswg.org/css-page-3/
+
+     https://css-tricks.com/can-you-view-print-stylesheets-applied-directly-in-the-browser/
+  */
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 12pt;
+    line-height: 1.3;
+
+    /* Force printing of background colors */
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  @page {
+    /*size: landscape;*/ /* Note: See https://developer.mozilla.org/en-US/docs/Web/CSS/@page/size#browser_compatibility */;
+    margin: 1in;
+  }
+
+  .table {
+    width: 100%;
+    font-size: 10pt;
+  }
+
+  .table:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  caption {
+    font-size: 18pt;
+  }
+
+  caption,
+  .table__head,
+  .table__row--note,
+  .table__row--head {
+    print-break-inside: avoid;
+    page-break-after: avoid;
+  }
+
+  .table__row {
+    print-break-inside: avoid;
+  }
+
+  .table__head .table__cell {
+    padding: 0.05in 0.05in 0;
+    font-size: 11pt;
+  }
+
+  .table__head .table__row .table__note {
+    padding: 0.05in;
+    font-size: 10pt;
+  }
+
+  .table__body .table__cell {
+    padding: 0.05in;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  a:link,
+  a:visited,
+  a {
+    page-break-inside: avoid;
+    background: transparent;
+    color: #520;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+  }
+
+  a[href^=http]:after {
+    content:" <" attr(href) "> ";
+  }
+
+  a[href^="#"]:after,
+  a[href^="mailto"]:after,
+  a:after > img {
+    content: "";
+  }
+
+  a:not(:local-link):after {
+    content:" <" attr(href) "> ";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ") ";
+  }
+
+  img {
+    page-break-inside: avoid;
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    page-break-inside: avoid;
+  }
+
+  iframe {
+    display: none;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    line-height: 0pt !important;
+    white-space: nowrap;
+  }
+
+  .table-wrap:before {
+    /*content: "\ Thank you for printing our article.";*/
+    }
+
+  .table-wrap:after {
+    /*content: "\ Copyright 2021";*/
+  }
+
+}
